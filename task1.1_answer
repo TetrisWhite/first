@@ -75,34 +75,5 @@ tetris@tetris-G3-3590:~/first$ rm fileB
 tetris@tetris-G3-3590:~/first$ git checkout -b feature1
 Переключено на новую ветку «feature1»
 tetris@tetris-G3-3590:~/first$ nano fileB
-tetris@tetris-G3-3590:~/second/first$ git checkout -b feature1
-Переключено на новую ветку «feature1»
-tetris@tetris-G3-3590:~/second/first$ git pull origin feature1
-Из https://github.com/TetrisWhite/first
- * branch            feature1   -> FETCH_HEAD
-Обновление 03cb0e4..6c5a3fd
-Fast-forward
- fileB          | 1 +
- task1.1_answer | 4 +++-
- 2 files changed, 4 insertions(+), 1 deletion(-)
-tetris@tetris-G3-3590:~/second/first$ git checkout msater
-error: pathspec 'msater' did not match any file(s) known to git.
-tetris@tetris-G3-3590:~/second/first$ git checkout master
-Переключено на ветку «master»
-Ваша ветка обновлена в соответствии с «origin/master».
-tetris@tetris-G3-3590:~/second/first$ git log --pretty=oneline
-03cb0e4c3a5fa2126208a8d826cdc43795740266 (HEAD -> master, origin/master, origin/HEAD, feature2) point 11
-ac6aedffcab2af169d63fd8e93bd7752bfad2e93 point 9
-7b3cd096cec86b7ebec3344da243843ab9239430 point 9
-76235c5f92956dd77d4822fddc31432b81d9f5b2 point 8
-ef1d3beb86cf4b079e182cd05acebb2cf5404feb point 7
-7345046397c083b924427281ba0c3eaf0d3b97ed point 4
-c8937779f31f7288ae77e4f20eccad63755c9135 first commit
-tetris@tetris-G3-3590:~/second/first$ git merge feature1
-Обновление 03cb0e4..6c5a3fd
-Fast-forward
- fileB          | 1 +
- task1.1_answer | 4 +++-
- 2 files changed, 4 insertions(+), 1 deletion(-)
 
 
