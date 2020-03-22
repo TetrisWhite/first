@@ -1,0 +1,68 @@
+tetris@tetris-G3-3590:~/first$ git init
+Инициализирован пустой репозиторий Git в /home/tetris/first/.git/
+tetris@tetris-G3-3590:~/first$ git config --list --show-origin 
+file:/home/tetris/.gitconfig    user.name=Tetris
+file:/home/tetris/.gitconfig    user.email=taplaptak@gmail.com
+file:/home/tetris/.gitconfig    core.editor=vscode
+file:/home/tetris/.gitconfig    credentil.helper=store
+file:/home/tetris/.gitconfig    credential.help=store
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=true
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+tetris@tetris-G3-3590:~/first$ git config --global user.name "Bannov Ilya"
+tetris@tetris-G3-3590:~/first$ git config --global user.email bannov@reg.ru
+tetris@tetris-G3-3590:~/first$ git config --list --show-origin 
+file:/home/tetris/.gitconfig    user.name=Bannov Ilya
+file:/home/tetris/.gitconfig    user.email=bannov@reg.ru
+file:/home/tetris/.gitconfig    core.editor=vscode
+file:/home/tetris/.gitconfig    credentil.helper=store
+file:/home/tetris/.gitconfig    credential.help=store
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=true
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+tetris@tetris-G3-3590:~/first$ echo "# first" >> README.md
+tetris@tetris-G3-3590:~/first$ git add README.md
+tetris@tetris-G3-3590:~/first$ git commit -m "first commit"
+[master (корневой коммит) c893777] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+tetris@tetris-G3-3590:~/first$ git remote add origin1 https://github.com/TetrisWhite/first
+tetris@tetris-G3-3590:~/first$ git push -u origin1 master
+Username for 'https://github.com': bannov@reg.ru
+Password for 'https://bannov@reg.ru@github.com': 
+Подсчет объектов: 3, готово.
+Запись объектов: 100% (3/3), 219 bytes | 219.00 KiB/s, готово.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/TetrisWhite/first
+ * [new branch]      master -> master
+Ветка «master» отслеживает внешнюю ветку «master» из «origin1».
+tetris@tetris-G3-3590:~/first$ nano task1.1
+tetris@tetris-G3-3590:~/first$ git status
+На ветке master
+Ваша ветка обновлена в соответствии с «origin1/master».
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+	task1.1
+
+ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
+tetris@tetris-G3-3590:~/first$ ls
+README.md  task1.1
+tetris@tetris-G3-3590:~/first$ nano .gitignore
+tetris@tetris-G3-3590:~/first$ ls
+README.md  task1.1
+tetris@tetris-G3-3590:~/first$ git status
+На ветке master
+Ваша ветка обновлена в соответствии с «origin1/master».
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+	.gitignore
+
+ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
+tetris@tetris-G3-3590:~/first$ echo "" >> task1.1_answer
+
