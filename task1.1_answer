@@ -104,5 +104,16 @@ Fast-forward
  fileB          | 1 +
  task1.1_answer | 4 +++-
  2 files changed, 4 insertions(+), 1 deletion(-)
+tetris@tetris-G3-3590:~/second/first$ git checkout feature2
+Переключено на ветку «feature2»
+tetris@tetris-G3-3590:~/second/first$ git branch
+  feature1
+* feature2
+  master
+tetris@tetris-G3-3590:~/second/first$ git branch -r
+  origin/HEAD -> origin/master
+  origin/feature1
+  origin/master
+
 
 
