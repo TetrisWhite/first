@@ -65,4 +65,6 @@ tetris@tetris-G3-3590:~/first$ git status
 
 ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
 tetris@tetris-G3-3590:~/first$ echo "" >> task1.1_answer
+tetris@tetris-G3-3590:~/second/first$ echo "dasa" >> fileA
+tetris@tetris-G3-3590:~/second/first$ echo "dasasdaa" >> fileB
 
