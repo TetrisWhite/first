@@ -65,6 +65,13 @@ tetris@tetris-G3-3590:~/first$ git status
 
 ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
 tetris@tetris-G3-3590:~/first$ echo "" >> task1.1_answer
+<<<<<<< HEAD
 tetris@tetris-G3-3590:~/second/first$ echo "dasa" >> fileA
 tetris@tetris-G3-3590:~/second/first$ echo "dasasdaa" >> fileB
+tetris@tetris-G3-3590:~/first$ nano fileA
+tetris@tetris-G3-3590:~/first$ git blame fileA
+ef1d3beb (Bannov Ilya       2020-03-22 17:39:10 +0400 1) dasa
+00000000 (Not Committed Yet 2020-03-22 17:41:29 +0400 2) dasdads
+tetris@tetris-G3-3590:~/first$ rm fileB
+
 
